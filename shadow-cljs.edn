@@ -1,0 +1,12 @@
+;; shadow-cljs configuration
+{:source-paths
+ ["src/cljs"]
+
+ :dependencies
+ [[funcool/promesa "3.0.0"]]
+
+ :builds
+ {:actions/clj-kondo {:target :node-script
+                      :output-to "actions/clj-kondo-setup/main.js"
+                      :main actions.clj-kondo/setup!
+                      :devtools {:after-load actions.clj-kondo/reload!}}}}

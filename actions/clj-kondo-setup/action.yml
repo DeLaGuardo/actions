@@ -1,0 +1,6 @@
+name: Setup clj-kondo
+description: Setup clj-kondo
+author: DeLaGuardo
+runs:
+  using: node12
+  main: clj-kondo-setyp.js
