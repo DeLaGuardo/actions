@@ -9,3 +9,5 @@
      (install-and-cache!)
      (catch ExceptionInfo e
        (core/setFailed (ex-message e))))))
+
+(setup!)

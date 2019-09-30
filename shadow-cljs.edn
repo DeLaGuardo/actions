@@ -9,4 +9,5 @@
  {:actions/clj-kondo {:target :node-script
                       :output-to "actions/clj-kondo-setup/main.js"
                       :main actions.clj-kondo/setup!
+                      :compiler-options {:optimizations :simple}
                       :devtools {:after-load actions.clj-kondo/reload!}}}}
